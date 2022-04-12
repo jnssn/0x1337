@@ -1,0 +1,15 @@
+{
+  "name": "0x1337",
+  "version": "1.0.0",
+  "description": "Ethereum vanity address generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sleaze.eth",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.6",
+    "web3": "^1.7.3"
+  }
+}
