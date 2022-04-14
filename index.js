@@ -4,10 +4,10 @@ const Web3 = require('web3')
 const pattern = /^([a-fA-F0-9]*)$/
 
 // Get the command-line arguments
-const args = minimist(process.argv.slice(2))
+const args = minimist(process.argv.slice(2), { string: ['prefix'] })
 
 // Set prefix parameter
-let prefix = args['prefix'] ? args['prefix'].toString() : '';
+let prefix = args['prefix'] ? args['prefix'].toString() : ''
 
 // Validate the prefix can be generated
 if (!pattern.test(prefix)) {
